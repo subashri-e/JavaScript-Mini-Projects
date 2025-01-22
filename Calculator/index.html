@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+</head>
+<link href="output.css" rel="stylesheet">
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<body class="font-mono min-h-screen flex items-center justify-center 
+bg-slate-800 text-cyan-200"> 
+    <!-- <h1 class="text-3xl font-serif tracking-wide font-bold flex justify-center item-center ">SCIENTIFIC CALCULATOR</h1>  -->
+    <div class="bg-slate-300 brightness-105 contrast-100 p-6 rounded-xl shadow xl w-96  ">
+        <input type="text" class="w-full bg-gray-700 mb-4 p-4 rounded-lg 
+        text-3xl text-right outline-none pointer-events-none" value="0" disabled />
+
+        <div class="grid grid-cols-5 gap-4 ">
+            <!-- row 1 -->
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > sin </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > cos </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > tan </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > log </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > ln </button>
+            <!-- row 2 -->
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > &radic; </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > x&sup2; </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > &pi; </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > e </button>
+            <button class="bg-violet-600 py-4 rounded-md hover:bg-violet-700 
+            active:bg-violet-800 text-white font-bold" > ^ </button>
+            <!-- row 3 -->
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > C </button>
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > &plusmn; </button>
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > % </button>
+            <button class="bg-blue-600 py-4 rounded-md hover:bg-blue-700 
+            active:bg-blue-800 text-white font-bold" > / </button>
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > &#9003; </button>
+            <!-- row 4 -->
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 7 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 8 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 9 </button>
+            <button class="bg-blue-600 py-4 rounded-md hover:bg-blue-700 
+            active:bg-blue-800 text-white font-bold" > * </button>
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > 1/x </button>
+            <!-- row 5 -->
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 4 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 5 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 6 </button>
+            <button class="bg-blue-600 py-4 rounded-md hover:bg-blue-700 
+            active:bg-blue-800 text-white font-bold" > - </button>
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > |x| </button>
+            <!-- row 6 -->
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 1 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 2 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > 3 </button>
+            <button class="bg-blue-600 py-4 rounded-md hover:bg-blue-700 
+            active:bg-blue-800 text-white font-bold" > + </button>
+            <button class="bg-slate-500 py-4 rounded-md hover:bg-slate-600 
+            active:bg-slate-800 text-white font-bold" > exp </button>
+            <!-- row 7 -->
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold col-span-2" > 0 </button>
+            <button class="bg-zinc-600 py-4 rounded-md hover:bg-zinc-700 
+            active:bg-zinc-800 text-white font-bold" > . </button>
+            <button class="bg-indigo-800 py-4 rounded-md hover:bg-indigo-700 
+            active:bg-indigo-900 text-white font-bold col-span-2" > = </button>
+            
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
